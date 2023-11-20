@@ -8,4 +8,4 @@ def index():
 
 @app.route('/sum/<int:a>/<int:b>')
 def sum(a: int, b: int):
-    return a + b
+    return f"La suma es: {str(a + b)}"
