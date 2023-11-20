@@ -4,7 +4,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "HOLA!"
+    return "Bienvenido"
+
+@app.route('/hello')
+def saludo():
+    return "Hola mundo"
 
 @app.route('/sum/<int:a>/<int:b>')
 def sum(a: int, b: int):
